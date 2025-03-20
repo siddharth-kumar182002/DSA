@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+
+long long n,k;
+cin>>n>>k;
+vector<int> arr;
+for (int i = 0; i < n; i++)
+{
+    long long temp;
+    cin>>temp;
+    arr.push_back(temp);
+}
+
+while(k--){
+    long long t;
+    cin>>t;
+
+//cout<<t<<endl;
+long long lo=0;
+long long hi=n-1;
+long long mid;
+while(hi-lo>1){
+    mid=(hi+lo)/2;
+    //cout<<"mid"<<mid<<endl;
+    if(arr[mid]>=t){
+        hi=mid;
+    }
+    else{
+        lo=mid+1;
+    }
+}
+//cout<<"lo"<<lo<<endl;
+if(arr[lo]>=t){
+    cout<<lo+1<<endl;
+    continue;
+}
+else if(arr[hi]>=t){
+cout<<hi+1<<endl;
+continue;
+}
+else{
+    cout<<n+1<<endl;
+}
+
+}
+
+
+return 0;
+}

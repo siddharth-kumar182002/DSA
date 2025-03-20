@@ -1,0 +1,1 @@
+./genAll.sh

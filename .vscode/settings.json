@@ -1,0 +1,8 @@
+{
+    "cph.general.onceMaintainerMessage": false,
+    "codepal.codeforcesHandle": "dohcradam",
+    "files.associations": {
+        "*.ejs": "html",
+        "iostream": "cpp"
+    }
+}
